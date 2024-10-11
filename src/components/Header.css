@@ -1,0 +1,117 @@
+/* General styles for the top navigation (for desktop) */
+.navbar {
+    background-color: #222;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-image {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+}
+
+.nav-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Space between links */
+    font-family: 'Slackey', cursive;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.nav-links li {
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-links li:hover {
+    color: #fdd835; /* Hover effect */
+}
+
+/* Bottom navigation bar for mobile */
+.bottom-nav {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #252829;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid #ddd;
+    z-index: 100; /* Keep it on top */
+}
+
+.bottom-nav a {
+    flex: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-nav a:hover {
+    color: #fdd835;
+}
+
+.bottom-nav img {
+    width: 24px; /* Icon size */
+    height: 24px;
+}
+
+.bottom-nav-text {
+    font-size: 12px; /* Text under icons */
+    margin-top: 5px;
+}
+
+/* Mobile specific styles (max-width 768px) */
+@media (max-width: 768px) {
+    /* Hide the desktop header navigation */
+    .navbar, .nav-content, .nav-wrapper, .nav-links {
+        display: none;
+    }
+
+    /* Show the bottom navigation for mobile */
+    .bottom-nav {
+        display: flex;
+    }
+}
+
+/* Desktop specific styles (min-width 769px) */
+@media (min-width: 769px) {
+    /* Ensure bottom navigation is hidden on larger screens */
+    .bottom-nav {
+        display: none;
+    }
+
+    /* Show desktop header (navbar) */
+    .navbar, .nav-content, .nav-wrapper, .nav-links {
+        display: flex;
+    }
+}

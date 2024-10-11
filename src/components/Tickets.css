@@ -1,0 +1,41 @@
+.tickets-section {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .tickets-section h2 {
+    font-size: 40px;
+    color: #fdd835;
+    margin-bottom: 40px;
+  }
+  
+  .tickets-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .ticket-text, .livestream-text {
+    background-color: #555;
+    padding: 30px;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .purchase-button, .livestream-button {
+    background-color: #fdd835;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .purchase-button:hover, .livestream-button:hover {
+    background-color: #222;
+    color: #fdd835;
+  }
+  

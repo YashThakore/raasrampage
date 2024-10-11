@@ -1,0 +1,31 @@
+.about {
+    background-color: #555;
+    padding: 60px 20px; /* More padding for separation */
+    color: white;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 48px; /* Larger heading */
+    color: #fdd835;
+  }
+  
+  .about p {
+    font-size: 18px;
+  }
+  
+  .about button {
+    background-color: #fdd835;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .about button:hover {
+    background-color: #333;
+    color: #fdd835;
+  }
+  
