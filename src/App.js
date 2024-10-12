@@ -6,10 +6,10 @@ import Tickets from './components/Tickets.js';
 import Livestream from './components/Livestream.js';
 import Footer from './components/Footer.js';
 import homeIcon from './images/raasrampagelogo.jpg'; // Import your logo
-import ticketsIcon from './images/ticket.jpg';
-import livestreamIcon from './images/livestream.jpg';
-import aboutIcon from './images/about.jpg';
-import applyIcon from './images/apply.jpg';
+import ticketsIcon from './images/ticket.png';
+import livestreamIcon from './images/livestream.png';
+import aboutIcon from './images/about.png';
+import applyIcon from './images/apply.png';
 import './App.css'; // For loading screen styles
 
 function App() {
