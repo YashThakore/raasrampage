@@ -14,14 +14,21 @@ import applyIcon from './images/apply.png';
 import './App.css'; // For loading screen styles and transitions
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1500); // Adjust time for fade-out
+    // Check if the user has already seen the loader
+    const hasVisited = sessionStorage.getItem('hasVisited');
 
-    return () => clearTimeout(timer);
+    if (!hasVisited) {
+      setIsLoading(true);  // Show the loader
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true'); // Set session storage flag
+      }, 1500); // Loader duration
+
+      return () => clearTimeout(timer); // Clean up timer on unmount
+    }
   }, []);
 
   return (
@@ -77,7 +84,6 @@ const PageRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/livestream" element={<Livestream />} />
-
           {/* Add other pages here */}
         </Routes>
       </CSSTransition>

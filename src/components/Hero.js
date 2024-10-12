@@ -33,7 +33,8 @@ const Hero = () => {
                     <p>Raas Rampage is a 4th-year intercollegiate bid competition that brings together college teams</p>
                     <p>to compete in Garba-Raas. Read more about it below.</p>
 
-                    <a href="#about" className="about-btn">Read More</a>
+
+                    <a href="about" className="about-btn">Read More</a>
                 </div>
 
                 <div class="volunteers-section">
