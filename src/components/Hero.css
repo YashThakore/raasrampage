@@ -167,7 +167,7 @@
 
 /* Short About Section */
 .short-about {
-  text-align: right;
+  text-align: center;
   margin-top: 50px;
   padding: 20px;
   background-color: #252829;
@@ -179,11 +179,13 @@
 
 .short-about h2 {
   font-size: 36px;
+  text-align: right;
   margin-bottom: 10px;
 }
 
 .short-about p {
   font-size: 18px;
+  text-align: right;
   margin-bottom: 20px;
 }
 
@@ -194,6 +196,7 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
+  float: right;
 }
 
 .about-btn:hover {
