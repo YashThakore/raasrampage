@@ -97,7 +97,7 @@
   
   .hero-text {
     max-width: 400px;  /* Ensures the text doesn't stretch too far */
-    text-align: left;
+    text-align: center;
     font-family: 'Slackey', cursive;
   }
   
