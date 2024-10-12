@@ -30,7 +30,9 @@ const Hero = () => {
             <div className="page-sections">
                 <div className="short-about">
                     <h2>About Raas Rampage</h2>
-                    <p>Raas Rampage is a 4th-year intercollegiate bid competition that brings together college teams to compete in Garba-Raas. Read more about it below.</p>
+                    <p>Raas Rampage is a 4th-year intercollegiate bid competition that brings together college teams</p>
+                    <p>to compete in Garba-Raas. Read more about it below.</p>
+
                     <a href="#about" className="about-btn">Read More</a>
                 </div>
 
@@ -38,7 +40,7 @@ const Hero = () => {
                     <div class="volunteer-content">
                         <h2>VOLUNTEERS</h2>
                         <p class="coming-soon">applications coming soon!</p>
-                        <p class="join-us">join the fanpage</p>
+                        <p class="join-us">join the fampage</p>
                         <p>Applications to become a volunteer at our competition will open soon. Please be on the lookout for this!</p>
                         <a href="#apply" class="apply-btn">Apply Now!</a>
                     </div>
