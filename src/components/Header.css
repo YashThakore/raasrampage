@@ -39,14 +39,21 @@
     letter-spacing: 1px;
 }
 
-.nav-links li {
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
+.nav-links li a {
+    color: white; /* Ensures text is white */
+    text-decoration: none; /* Removes underline */
 }
 
-.nav-links li:hover {
+.nav-links li a:link, 
+.nav-links li a:visited, 
+.nav-links li a:active {
+    color: white; /* White for all link states */
+    text-decoration: none; /* No underline for visited or active */
+}
+
+.nav-links li a:hover {
     color: #fdd835; /* Hover effect */
+    text-decoration: none; /* No underline on hover */
 }
 
 /* Bottom navigation bar for mobile */
@@ -90,7 +97,7 @@
     margin-top: 5px;
 }
 
-/* Mobile specific styles (max-width 768px) */
+/* Mobile specific styles (max-width: 768px) */
 @media (max-width: 768px) {
     /* Hide the desktop header navigation */
     .navbar, .nav-content, .nav-wrapper, .nav-links {
@@ -103,7 +110,7 @@
     }
 }
 
-/* Desktop specific styles (min-width 769px) */
+/* Desktop specific styles (min-width: 769px) */
 @media (min-width: 769px) {
     /* Ensure bottom navigation is hidden on larger screens */
     .bottom-nav {

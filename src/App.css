@@ -69,3 +69,31 @@
     opacity: 0;
   }
 }
+
+
+/* sliding animation for pages*/
+.slide-enter {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 800ms cubic-bezier(0.25, 0.8, 0.25, 1), transform 800ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.slide-exit {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 800ms cubic-bezier(0.25, 0.8, 0.25, 1), transform 800ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
