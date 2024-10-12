@@ -6,7 +6,6 @@ import Hero from './components/Hero.js';
 import About from './components/About.js';
 import Tickets from './components/Tickets.js';
 import Livestream from './components/Livestream.js';
-import Footer from './components/Footer.js';
 import homeIcon from './images/raasrampagelogo.jpg';
 import ticketsIcon from './images/ticket.png';
 import livestreamIcon from './images/livestream.png';
@@ -36,7 +35,6 @@ function App() {
           <>
             <Header />
             <PageRoutes />
-            <Footer />
           </>
         )}
 

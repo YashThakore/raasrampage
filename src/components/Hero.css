@@ -104,11 +104,12 @@
   .hero h1 {
     font-size: 90px;
     font-weight: bolder;
+    margin-top: 0px;
   }
   
   .hero .info {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     color: #fdd835;
     font-style: italic;
     font-family: 'Slackey', cursive;
@@ -163,3 +164,148 @@
       padding: 10px 20px; /* Add padding around header */
     }
   }
+
+/* Short About Section */
+.short-about {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #252829;
+  color: white;
+  border-radius: 8px;
+  width: 80%;
+  margin: 20px auto; /* Center the section */
+}
+
+.short-about h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.short-about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background-color: #fdd835;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.about-btn:hover {
+  background-color: #ffe77a;
+}
+
+/* Volunteers Section */
+.volunteers-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #252829; /* Match the hero background */
+  color: white;
+  border-radius: 8px;
+  width: 90%;
+  margin: 40px auto; /* Center the section */
+}
+
+.volunteer-content {
+  max-width: 500px; /* Adjust content width */
+  padding-right: 20px; /* Space between image and content */
+}
+
+.volunteers-section h2 {
+  font-size: 48px; /* Larger text for main title */
+  color: white;
+}
+
+.coming-soon {
+  font-size: 28px;
+  color: #fdd835; /* Highlight color */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.join-us {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #ffe77a;
+}
+
+.volunteers-section p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.apply-btn {
+  background-color: #fdd835;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px; /* Add margin above button */
+}
+
+.apply-btn:hover {
+  background-color: #ffe77a;
+}
+
+.volunteer-img {
+  width: 100%; /* Set to 100% width for smaller screens */
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .volunteers-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .volunteer-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .volunteer-img {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+/* Add some responsive design to make it look good on smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .short-about,
+  .volunteers-section {
+    width: 100%; /* Make it take full width on smaller screens */
+  }
+
+  .hero-image img {
+    width: 100%; /* Adjust the image size on mobile */
+  }
+}
+
+
+body {
+  background-color: #252829; /* Match this with your hero's background color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent any horizontal scrolling */
+}
+
+html {
+  background-color: #252829; /* Match this with your page background */
+}
