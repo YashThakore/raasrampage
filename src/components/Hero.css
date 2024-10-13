@@ -179,14 +179,14 @@
 
 .short-about h2 {
   font-size: 36px;
-  text-align: right;
   margin-bottom: 10px;
+  text-align: center; /* Ensure the title is centered */
 }
 
 .short-about p {
   font-size: 18px;
-  text-align: right;
   margin-bottom: 20px;
+  text-align: center; /* Ensure the paragraph is centered */
 }
 
 .about-btn {
@@ -196,7 +196,7 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
-  float: right;
+  display: inline-block; /* Ensure the button doesn't stretch */
 }
 
 .about-btn:hover {
