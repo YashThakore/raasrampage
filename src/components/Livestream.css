@@ -1,92 +1,136 @@
-/* General styles for the livestream section */
-.livestream-section {
-  background-color: #f5f5f5;
-  padding: 40px 20px;
-}
-
+/* Upcoming Livestream section */
 .upcoming-livestream {
+  background-color: #d0d0d0; /* Light grey background */
+  padding: 60px 0;
   text-align: center;
-  background-color: #d1b58f;
-  padding: 50px 20px;
-  margin-bottom: 40px;
 }
 
 .upcoming-livestream h2 {
-  font-size: 36px;
-  color: #252829;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.coming-soon-text {
+  font-size: 20px;
+  color: #777; /* Grey color for 'Coming soon...' text */
+  margin-bottom: 30px; /* Space between the text and the button */
 }
 
 .livestream-button {
   background-color: #b58956;
-  color: white;
-  padding: 10px 20px;
+  color: rgb(53, 53, 53);
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.past-livestream {
-  background-color: #252829;
-  color: white;
-  padding: 50px 20px;
-  margin-bottom: 50px;
+.livestream-button:hover {
+  background-color: #fdd835;
+}
+
+/* General section styles */
+.livestream-section {
+  padding: 20px;
   text-align: center;
 }
 
-.past-livestream h2 {
-  font-size: 36px;
-  color: #ffe77a;
+/* Dark background for the video embed sections */
+.dark-bg {
+  background-color: #252829;
+  padding: 40px 0;
+  color: white;
+}
+
+.livestream-embed h2 {
+  color: white;
+  font-style: italic;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
 .livestream-video {
-  margin-bottom: 30px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.show-order {
+/* Light background for the show order sections */
+.light-bg {
+  background-color: #f2f2f2d0;
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  flex-direction: row;
+  border-top: 1px solid #d0d0d0; /* Separation line at the top */
+  border-bottom: 1px solid #d0d0d0; /* Separation line at the bottom */
 }
 
 .show-order-img {
-  width: 40%;
-  border-radius: 10px;
+  width: 50%;
+  border-radius: 8px;
+  margin-right: 20px;
+  border-right: 10px solid #e7e7e7;
 }
 
 .show-order-text {
-  width: 55%;
   text-align: left;
-  color: #cfcfcf;
+  width: 50%;
 }
 
-.show-order-text h3 {
-  font-size: 28px;
-  color: #fdd835;
+.show-order h3 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  border-bottom: 5px solid #e7e7e7;
 }
 
-.show-order-text ol {
+.show-order ol {
+  list-style-position: inside;
   font-size: 18px;
-  color: #f5f5f5;
+  margin-bottom: 10px;
 }
 
-.show-order-text li {
-  margin-bottom: 8px;
+.show-order li {
+  margin-bottom: 10px;
+  font-weight:lighter;
 }
 
+.show-order li strong {
+  color: #000;
+  font-weight:500;
+}
+
+.show-order p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Adding year under the show order title */
+.rampage-year {
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px; /* Adjust spacing between 'Show Order' and year */
+}
+
+
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .show-order {
+  .show-order-img, .show-order-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .light-bg {
     flex-direction: column;
+    padding: 20px;
   }
 
-  .show-order-img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .show-order-text {
-    width: 100%;
+  .show-order h3::after {
+    font-size: 12px;
   }
 }
