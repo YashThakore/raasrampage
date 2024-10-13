@@ -81,6 +81,7 @@ const Livestream = () => {
             <li><strong>gt ramblin' raas</strong></li>
             <li>illini raas</li>
           </ol>
+          <p><i>*Bolded teams placed at Raas Rampage 2.0</i></p>
         </div>
       </div>
 
@@ -112,6 +113,7 @@ const Livestream = () => {
             <li>uh roarin' raas</li>
             <li>steel city raas</li>
           </ol>
+          <p><i>*Bolded teams placed at Raas Rampage 1.0</i></p>
         </div>
       </div>
     </section>
