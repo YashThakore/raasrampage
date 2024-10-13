@@ -1,26 +1,92 @@
+/* General styles for the livestream section */
 .livestream-section {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
-    text-align: center;
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.upcoming-livestream {
+  text-align: center;
+  background-color: #d1b58f;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+}
+
+.upcoming-livestream h2 {
+  font-size: 36px;
+  color: #252829;
+}
+
+.livestream-button {
+  background-color: #b58956;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.past-livestream {
+  background-color: #252829;
+  color: white;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.past-livestream h2 {
+  font-size: 36px;
+  color: #ffe77a;
+  margin-bottom: 20px;
+}
+
+.livestream-video {
+  margin-bottom: 30px;
+}
+
+.show-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.show-order-img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.show-order-text {
+  width: 55%;
+  text-align: left;
+  color: #cfcfcf;
+}
+
+.show-order-text h3 {
+  font-size: 28px;
+  color: #fdd835;
+}
+
+.show-order-text ol {
+  font-size: 18px;
+  color: #f5f5f5;
+}
+
+.show-order-text li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .show-order {
+    flex-direction: column;
   }
-  
-  .livestream-section h2 {
-    font-size: 36px;
-    color: #333;
+
+  .show-order-img {
+    width: 100%;
     margin-bottom: 20px;
   }
-  
-  .livestream-video {
-    background-color: #333;
-    color: white;
-    padding: 30px;
+
+  .show-order-text {
+    width: 100%;
   }
-  
-  .video-placeholder {
-    background-color: #555;
-    padding: 50px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: white;
-  }
-  
+}
