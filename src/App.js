@@ -6,28 +6,28 @@ import Hero from './components/Hero.js';
 import About from './components/About.js';
 import Tickets from './components/Tickets.js';
 import Livestream from './components/Livestream.js';
+import Apply from './components/Apply.js';
 import homeIcon from './images/raasrampagelogo.jpg';
 import ticketsIcon from './images/ticket.png';
 import livestreamIcon from './images/livestream.png';
 import aboutIcon from './images/about.png';
 import applyIcon from './images/apply.png';
-import './App.css'; // For loading screen styles and transitions
+import './App.css';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already seen the loader
     const hasVisited = sessionStorage.getItem('hasVisited');
 
     if (!hasVisited) {
-      setIsLoading(true);  // Show the loader
+      setIsLoading(true); 
       const timer = setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('hasVisited', 'true'); // Set session storage flag
-      }, 1500); // Loader duration
+        sessionStorage.setItem('hasVisited', 'true'); 
+      }, 1500); 
 
-      return () => clearTimeout(timer); // Clean up timer on unmount
+      return () => clearTimeout(timer); 
     }
   }, []);
 
@@ -45,7 +45,6 @@ function App() {
           </>
         )}
 
-        {/* Mobile Bottom Navigation */}
         <div className="bottom-nav">
           <a href="/">
             <img src={homeIcon} alt="Home" />
@@ -74,7 +73,7 @@ function App() {
 }
 
 const PageRoutes = () => {
-  const location = useLocation(); // Get the current location (path)
+  const location = useLocation();
   
   return (
     <TransitionGroup>
@@ -84,7 +83,7 @@ const PageRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/livestream" element={<Livestream />} />
-          {/* Add other pages here */}
+          <Route path="/apply" element={<Apply />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>

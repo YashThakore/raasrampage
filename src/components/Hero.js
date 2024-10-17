@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import dancerImage from '../images/homelogo.jpg';
-import volunteerImage from '../images/groupboardphoto.jpg'; // Assuming you have a volunteer image
+import volunteerImage from '../images/groupboardphoto.jpg';
 
 const Hero = () => {
     const bubbles = Array.from({ length: 5 }).map((_, index) => (
@@ -26,7 +26,6 @@ const Hero = () => {
                 </div>
             </section>
 
-            {/* Page Sections moved outside of the hero section */}
             <div className="page-sections">
                 <div className="short-about">
                     <h2>About Raas Rampage</h2>

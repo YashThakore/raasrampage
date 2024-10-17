@@ -38,7 +38,6 @@
 }
 
 
-/* Loading screen styles */
 .loading-screen {
   position: fixed;
   top: 0;
@@ -52,9 +51,8 @@
   z-index: 9999;
 }
 
-/* Fade-in and fade-out animation for the logo */
 .loading-logo {
-  width: 150px; /* Adjust the size as needed */
+  width: 150px; 
   animation: fadeInOut 1.5s ease-in-out forwards;
 }
 
@@ -71,7 +69,6 @@
 }
 
 
-/* sliding animation for pages*/
 .slide-enter {
   position: absolute;
   width: 100%;

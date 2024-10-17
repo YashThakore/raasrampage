@@ -1,6 +1,6 @@
 /* Upcoming Livestream section */
 .upcoming-livestream {
-  background-color: #d0d0d0; /* Light grey background */
+  background-color: #d0d0d0; 
   padding: 60px 0;
   text-align: center;
 }
@@ -15,8 +15,8 @@
 
 .coming-soon-text {
   font-size: 20px;
-  color: #777; /* Grey color for 'Coming soon...' text */
-  margin-bottom: 30px; /* Space between the text and the button */
+  color: #777; 
+  margin-bottom: 30px; 
 }
 
 .livestream-button {
@@ -33,13 +33,11 @@
   background-color: #fdd835;
 }
 
-/* General section styles */
 .livestream-section {
   padding: 20px;
   text-align: center;
 }
 
-/* Dark background for the video embed sections */
 .dark-bg {
   background-color: #252829;
   padding: 40px 0;
@@ -58,7 +56,6 @@
   border-radius: 8px;
 }
 
-/* Light background for the show order sections */
 .light-bg {
   background-color: #f2f2f2d0;
   padding: 40px 20px;
@@ -66,8 +63,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border-top: 1px solid #d0d0d0; /* Separation line at the top */
-  border-bottom: 1px solid #d0d0d0; /* Separation line at the bottom */
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0; 
 }
 
 .show-order-img {
@@ -110,15 +107,14 @@
   margin-top: 10px;
 }
 
-/* Adding year under the show order title */
+
 .rampage-year {
   font-size: 14px;
   color: #888;
-  margin-left: 10px; /* Adjust spacing between 'Show Order' and year */
+  margin-left: 10px; 
 }
 
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .show-order-img, .show-order-text {
     width: 100%;

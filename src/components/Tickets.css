@@ -1,10 +1,10 @@
-/* General styles for the tickets section */
+
 .tickets-section {
   width: 100%;
   margin: 0 auto;
 }
 
-/* Show Section with dancers and text */
+
 .show-section {
   position: relative;
   background-color: #252829;
@@ -23,30 +23,30 @@
 }
 
 .dancer-img {
-  width: 540px; /* Increase the size of the dancers */
+  width: 540px;
   height: auto;
   position: relative;
   z-index: 1;
 }
 
 .dancer-img-left {
-  margin-right: -80px; /* Move dancer closer to text */
+  margin-right: -80px;
 }
 
 .dancer-img-right {
-  margin-left: -80px; /* Move dancer closer to text */
+  margin-left: -80px;
 }
 
 .show-text {
   text-align: center;
   font-family: 'Slackey', cursive;
-  font-size: 55px; /* Increase the size of the text */
+  font-size: 55px;
   z-index: 2;
   position: relative;
 }
 
 .highlight-text {
-  color: #ffe77a; /* Highlighting the word "SHOW" */
+  color: #ffe77a;
 }
 
 /* Tickets Section */
@@ -55,7 +55,7 @@
   justify-content: space-between;
   align-items: stretch;
   padding: 60px;
-  background-color: #b58956; /* Matching the gold background */
+  background-color: #b58956;
   color: white;
 }
 
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8; /* Light background for purchase section */
+  background-color: #f8f8f8; 
 }
 
 .purchase-content {
@@ -151,7 +151,6 @@
   background-color: #fdd835;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .tickets-container {
     flex-direction: column;

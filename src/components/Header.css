@@ -19,7 +19,7 @@
 }
 
 .logo-image {
-    height: 60px; /* Adjust logo size */
+    height: 60px; 
     width: auto;
 }
 
@@ -32,7 +32,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px; /* Space between links */
+    gap: 40px; 
     font-family: 'Slackey', cursive;
     color: white;
     font-size: 16px;
@@ -40,25 +40,25 @@
 }
 
 .nav-links li a {
-    color: white; /* Ensures text is white */
-    text-decoration: none; /* Removes underline */
+    color: white; 
+    text-decoration: none; 
 }
 
 .nav-links li a:link, 
 .nav-links li a:visited, 
 .nav-links li a:active {
-    color: white; /* White for all link states */
-    text-decoration: none; /* No underline for visited or active */
+    color: white; 
+    text-decoration: none; 
 }
 
 .nav-links li a:hover {
-    color: #fdd835; /* Hover effect */
-    text-decoration: none; /* No underline on hover */
+    color: #fdd835; 
+    text-decoration: none; 
 }
 
-/* Bottom navigation bar for mobile */
+
 .bottom-nav {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     bottom: 0;
     left: 0;
@@ -69,7 +69,7 @@
     align-items: center;
     height: 80px;
     border-top: 1px solid #ddd;
-    z-index: 100; /* Keep it on top */
+    z-index: 100; 
 }
 
 .bottom-nav a {
@@ -88,12 +88,12 @@
 }
 
 .bottom-nav img {
-    width: 24px; /* Icon size */
+    width: 24px; 
     height: 24px;
 }
 
 .bottom-nav-text {
-    font-size: 12px; /* Text under icons */
+    font-size: 12px;
     margin-top: 5px;
 }
 

@@ -1,12 +1,12 @@
 .apply {
     background-color: #555;
-    padding: 60px 20px; /* More padding for separation */
+    padding: 60px 20px;
     color: white;
     text-align: center;
   }
   
   .apply h2 {
-    font-size: 48px; /* Larger heading */
+    font-size: 48px;
     color: #fdd835;
   }
   
