@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import About from './components/About.js';
+import Schedule from './components/Schedule.js';
 import Tickets from './components/Tickets.js';
 import Livestream from './components/Livestream.js';
 import Apply from './components/Apply.js';
@@ -84,6 +85,7 @@ const PageRoutes = () => {
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/livestream" element={<Livestream />} />
           <Route path="/apply" element={<Apply />} />
+          <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
