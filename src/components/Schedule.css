@@ -19,44 +19,41 @@
   
   /* Header styling */
   .schedule-table thead th {
-    background-color: #6ab04c; /* Google Sheets-like green */
+    background-color: #000000; /* Green header background */
     color: #ffffff;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
     font-weight: bold;
     border: 1px solid #ddd;
   }
   
-  /* Body rows */
-  .schedule-table tbody tr:nth-child(even) {
-    background-color: #f5f5f5;
+  /* Specific row color for events like Registration and Mixer */
+  .schedule-table .gold-row {
+    background-color: #fdeb81; /* Gold */
   }
   
-  .schedule-table tbody tr:nth-child(odd) {
-    background-color: #ffffff;
+  /* Specific row color for events like Transition and Drive */
+  .schedule-table .light-blue-row {
+    background-color: #cae8fd; /* Light blue */
   }
   
-  /* Cell styling */
-  .schedule-table td {
+  /* Default row color for other events */
+  .schedule-table .light-gray-row {
+    background-color: #e2dddd; /* Light gray */
+  }
+  
+  /* Cell padding and border */
+  .schedule-table td, .schedule-table th {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
   }
   
-  /* Highlight colors for specific rows */
-  .schedule-table tbody tr td.highlight {
-    background-color: #fef9e7; /* Light yellow */
-  }
-  
-  .schedule-table tbody tr td.green-highlight {
-    background-color: #d5f5e3; /* Light green */
-  }
-  
-  .schedule-table tbody tr td.blue-highlight {
-    background-color: #d6eaf8; /* Light blue */
-  }
-  
-  .schedule-table tbody tr td.orange-highlight {
-    background-color: #f9e79f; /* Light orange */
+  /* Table title styling */
+  .schedule-container h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
   }
   

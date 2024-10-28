@@ -36,6 +36,25 @@ const Schedule = () => {
     }
 
     return (
+        <div>
+            <ScheduleTable scheduleData={scheduleData} />
+        </div>
+    );
+};
+
+export default Schedule;
+
+const ScheduleTable = ({ scheduleData }) => {
+    const getRowClass = (eventName) => {
+        if (/registration|mixer/i.test(eventName)) {
+            return "gold-row";
+        } else if (/transition|drive/i.test(eventName)) {
+            return "light-blue-row";
+        }
+        return "light-gray-row";
+    };
+
+    return (
         <div className="schedule-container">
             <h2>Friday Schedule</h2>
             <table className="schedule-table">
@@ -48,7 +67,7 @@ const Schedule = () => {
                 </thead>
                 <tbody>
                     {scheduleData.slice(1).map((row, rowIndex) => (
-                        <tr key={rowIndex}>
+                        <tr key={rowIndex} className={getRowClass(row[3])}>
                             {row.map((cell, cellIndex) => (
                                 <td key={cellIndex}>{cell}</td>
                             ))}
@@ -59,20 +78,3 @@ const Schedule = () => {
         </div>
     );
 };
-
-export default Schedule;
-
-function applyHighlights() {
-    const rows = document.querySelectorAll('.schedule-table tbody tr');
-    rows.forEach(row => {
-        const eventText = row.cells[3]?.innerText.toLowerCase();
-        if (eventText.includes('optional')) {
-            row.cells[3].classList.add('orange-highlight');
-        } else if (eventText.includes('drive')) {
-            row.cells[3].classList.add('green-highlight');
-        } else if (eventText.includes('mixer') || eventText.includes('transition')) {
-            row.cells[3].classList.add('blue-highlight');
-        }
-    });
-}
-applyHighlights();
