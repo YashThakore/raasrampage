@@ -1,59 +1,122 @@
 /* Main container styling */
 .schedule-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #25282b; /* Dark background */
-    color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #25282b; /* Dark background */
+  color: #ffffff;
+}
+
+.schedule-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Table styling */
+.schedule-table {
+  width: 90%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  overflow-x: auto; /* Add horizontal scroll for small screens */
+}
+
+.schedule-table thead th {
+  background-color: #000000; /* Green header background */
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+/* Specific row colors */
+.schedule-table .gold-row {
+  background-color: #fdeb81; /* Gold */
+}
+
+.schedule-table .light-blue-row {
+  background-color: #cae8fd; /* Light blue */
+}
+
+.schedule-table .light-gray-row {
+  background-color: #e2dddd; /* Light gray */
+}
+
+.schedule-table td,
+.schedule-table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Adjust button wrapping for smaller screens */
+}
+
+.button-container button {
+  background-color: #bb904a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex: 1; /* Make buttons responsive */
+  max-width: 150px; /* Limit button width */
+}
+
+.button-container button:hover {
+  background-color: #9a7339;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .schedule-container h1 {
+      font-size: 24px; /* Adjust main title font size */
   }
-  
-  /* Table styling */
+
   .schedule-table {
-    width: 90%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333333;
+      font-size: 12px; /* Smaller table font size */
   }
-  
-  /* Header styling */
-  .schedule-table thead th {
-    background-color: #000000; /* Green header background */
-    color: #ffffff;
-    padding: 12px;
-    text-align: left;
-    font-weight: bold;
-    border: 1px solid #ddd;
+
+  .schedule-table td,
+  .schedule-table th {
+      padding: 8px; /* Reduce padding for mobile */
   }
-  
-  /* Specific row color for events like Registration and Mixer */
-  .schedule-table .gold-row {
-    background-color: #fdeb81; /* Gold */
+
+  .button-container {
+      gap: 5px; /* Reduce button spacing */
   }
-  
-  /* Specific row color for events like Transition and Drive */
-  .schedule-table .light-blue-row {
-    background-color: #cae8fd; /* Light blue */
+
+  .button-container button {
+      padding: 8px 15px; /* Adjust button padding */
+      font-size: 14px; /* Reduce button font size */
   }
-  
-  /* Default row color for other events */
-  .schedule-table .light-gray-row {
-    background-color: #e2dddd; /* Light gray */
+}
+
+@media (max-width: 480px) {
+  .schedule-container h1 {
+      font-size: 20px; /* Further adjust title for very small screens */
   }
-  
-  /* Cell padding and border */
-  .schedule-table td, .schedule-table th {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+
+  .button-container button {
+      padding: 6px 10px; /* Smaller padding for tiny screens */
+      font-size: 12px;
   }
-  
-  /* Table title styling */
-  .schedule-container h2 {
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
+
+  .schedule-table td,
+  .schedule-table th {
+      padding: 5px; /* Even smaller padding */
   }
-  
+}
