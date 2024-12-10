@@ -8,12 +8,13 @@ import Schedule from './components/Schedule.js';
 import Sponsors from './components/Sponsorship.js';
 import Tickets from './components/Tickets.js';
 import Livestream from './components/Livestream.js';
-import Apply from './components/Apply.js';
+// import Apply from './components/Apply.js';
 import homeIcon from './images/raasrampagelogo.jpg';
 import ticketsIcon from './images/ticket.png';
 import livestreamIcon from './images/livestream.png';
 import aboutIcon from './images/about.png';
-import applyIcon from './images/apply.png';
+// import applyIcon from './images/apply.png';
+import scheduleIcon from './images/apply.png';
 import './App.css';
 
 function App() {
@@ -64,9 +65,9 @@ function App() {
             <img src={aboutIcon} alt="About Us" />
             <span className="bottom-nav-text">About</span>
           </a>
-          <a href="/apply">
-            <img src={applyIcon} alt="Apply" />
-            <span className="bottom-nav-text">Apply</span>
+          <a href="/schedule">
+            <img src={scheduleIcon} alt="Schedule" />
+            <span className="bottom-nav-text">Schedule</span>
           </a>
         </div>
       </div>
@@ -85,7 +86,6 @@ const PageRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/tickets" element={<Tickets />} />
           <Route path="/livestream" element={<Livestream />} />
-          <Route path="/apply" element={<Apply />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/sponsors" element={<Sponsors />} />
         </Routes>
