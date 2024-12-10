@@ -47,12 +47,21 @@
   background-color: #e2dddd; /* Light gray */
 }
 
+
 .schedule-table td,
 .schedule-table th {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
 }
+
+/* Ensure empty cells have a consistent appearance */
+.schedule-table td:empty {
+  background-color: inherit; /* Inherit the row's background color */
+  border: 1px solid #ddd;
+  min-height: 20px; /* Optional: Ensures the cell has a minimum height */
+}
+
 
 /* Button container styling */
 .button-container {

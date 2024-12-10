@@ -81,7 +81,9 @@ const ScheduleTable = ({ scheduleData }) => {
                 {scheduleData.map((row, rowIndex) => (
                     <tr key={rowIndex} className={getRowClass(row[3])}>
                         {row.map((cell, cellIndex) => (
-                            <td key={cellIndex}>{cell}</td>
+                            <td key={cellIndex}>
+                                {cell || "\u00A0" /* Use a non-breaking space for empty cells */}
+                            </td>
                         ))}
                     </tr>
                 ))}
